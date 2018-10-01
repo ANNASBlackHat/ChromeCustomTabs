@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
@@ -8,12 +7,21 @@
     android:padding="@dimen/activity_horizontal_margin"
     tools:context="com.developer.annasblackhat.chromecustomtabs.MainActivity">
 
-  <Button
-      android:text="GO TO MY FB"
-      android:onClick="btnGo_Click"
-      android:layout_centerHorizontal="true"
-      android:layout_centerVertical="true"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/edtUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_enter_website"
+        android:maxLines="1"
+        android:text="https://android-developers.googleblog.com/" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:onClick="btnGo_Click"
+        android:text="@string/str_open_url" />
 
 </RelativeLayout>

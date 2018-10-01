@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Chrome Custom Tabs</string>
+    <string name="str_open_url">Open URL</string>
+    <string name="hint_enter_website">Enter website</string>
 </resources>
